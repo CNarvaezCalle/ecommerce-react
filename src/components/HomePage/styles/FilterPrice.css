@@ -1,0 +1,117 @@
+.price__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  max-width: 150px;
+  margin-top: 2rem;
+  max-height: 50px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.price__container.open {
+  max-height: 1000px;
+  transition: max-height 1s ease;
+}
+
+.price__title {
+  color: #F85555;
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #F85555;
+  margin-left: 0.5rem;
+  transform: translateY(2px);
+  transition: transform 0.4s ease;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+}
+
+.arrow.open {
+  transform: translateY(3px) rotate(180deg);
+}
+
+.price__from {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  margin-bottom: 1em;
+}
+
+.from__input {
+  border: 1px solid rgb(179, 179, 179);
+  max-width: 150px;
+}
+
+.price__to {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.to__input {
+  border: 1px solid rgb(179, 179, 179);
+  max-width: 150px;
+  
+}
+
+.filter__price__btn {
+  background-color: #F85555;
+  color: white;
+  margin-top: 1em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  padding: 0.4em;
+}
+
+@media screen and (max-width: 600px) {
+  .price__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .price__container.open {
+    max-height: 1000px;
+    transition: max-height 1s ease;
+  }
+
+  .price__title {
+    color: #F85555;
+    font-weight: 800;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #F85555;
+    margin-left: 0.5rem;
+    transform: translateY(2px);
+    transition: transform 0.4s ease;
+    position: absolute;
+    top: 50%;
+    right: 4px;
+  }
+
+}

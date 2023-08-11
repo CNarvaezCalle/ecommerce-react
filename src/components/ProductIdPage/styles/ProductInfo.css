@@ -1,0 +1,68 @@
+.info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  gap: 1rem;
+}
+
+.info__description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.info__description__text {
+  font-size: 0.8rem;
+  line-height: 1.4em;
+  text-align: justify;
+}
+
+.info__container__price {
+  display: flex;
+  gap: 1rem;
+}
+
+.info__title__price {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.info__price::before {
+  content: "$";
+}
+
+.info__container__quantity {
+  display: flex;
+  gap: 1em;
+}
+
+.info__quantity__title {
+  font-size: 1rem;
+}
+
+.info__counter {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.info__btn {
+  background-color: #F85555;
+  color: white;
+  height: 1rem;
+  border-radius: 5px;
+  padding-bottom: 1.14rem;
+  cursor: pointer;
+}
+
+.info__btn__add {
+  display: flex;
+  font-size: 1rem;
+  justify-self: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  background-color: white;
+}
+

@@ -1,0 +1,71 @@
+.prcart__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prcart__header {
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+  width: 100%;
+  max-width: 7em;
+  padding: 1.2em;
+  aspect-ratio: 1;
+  margin-right: 1rem;
+}
+
+.prcart__img {
+  cursor: pointer;
+}
+
+
+.prcart__section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 500px;
+
+}
+
+.prcart__title {
+  font-size: 0.8rem;
+  align-self: center;
+  width: 350px;
+}
+
+.prcart__quantity {
+  font-size: 0.7rem;
+  font-weight: 800;
+  justify-self: center;
+  align-self: center;
+}
+
+.prcart__btn {
+  justify-self: center;
+  align-self: center;
+  background-color: white;
+}
+
+.prcart__footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.prcart__subtotal__title {
+  width: 6rem;
+  font-size: 0.9rem;
+}
+
+.prcart__subtotal {
+  width: 6rem;
+  font-size: 0.9rem;
+}
+
+.prcart__subtotal::before {
+  content: "$";
+  margin-right: 5px;
+}
+

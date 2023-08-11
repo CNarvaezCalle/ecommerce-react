@@ -1,0 +1,11 @@
+.purchasespage__container {
+  margin: 6em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchasespage__title {
+  color: #f85555;
+}

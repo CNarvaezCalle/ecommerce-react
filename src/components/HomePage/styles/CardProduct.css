@@ -1,0 +1,118 @@
+.card {
+  border: 0.1em solid #ccc;
+  border-radius: 0.4em;
+  width: 100%;
+  max-width: 15em;
+  cursor: pointer;
+  transition: transform 150ms ease;
+  background-color: white;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card__header {
+  padding: 1.2em;
+  aspect-ratio: 1.5;
+  border-bottom: 0.1em solid #ccc;
+  position: relative;
+}
+
+.card__img {
+  width: 85%; /*se adapta lo que mas pueda si es el 100% de width pero sin perder su proporcion */
+  height: 85%; /*se adapta lo que mas pueda si es el 100% de height pero sin perder su proporcion */
+  object-fit: contain; 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 500ms ease;
+}
+
+.card__header:hover .card__img1 {
+  opacity: 0;
+}
+
+.card__header:hover .card__img2 {
+  opacity: 1;
+}
+
+.card__img1 {
+  opacity: 1;
+}
+
+.card__img2 {
+  opacity: 0;
+}
+
+.card__body {
+  padding: 1.5em 1.2em 2em;
+  display: grid;
+  gap: 1.5em 0;
+  grid-template-columns: repeat(2, 1fr);
+  /* overflow: hidden; */
+}
+
+.card__body__header {
+  grid-column: span 2;
+}
+
+.card__brand {
+  font-size: 0.9em;
+  margin-left: 1em;
+  color: #888;
+  font-weight: 300;
+  margin-bottom: 0.2em;
+}
+
+.card__name {
+  grid-column: span 2;
+  font-size: 1em;
+  font-weight: 500;
+  height: 2em;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+.card__price__label {
+  color: #888;
+  font-weight: 300;
+  font-size: 0.9em;
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+} 
+
+.card__price__value {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.card__price__value::before {
+  content: '$';
+  margin-right: 0.5em;
+}
+
+.card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  width: 1.7em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #F85555;
+  color: white;
+  justify-self: center;
+  position: relative;
+  left: 1em;
+  filter: grayscale(0.2);
+}
+
+.card__btn:hover {
+  filter: grayscale(0);
+}
+
+
+

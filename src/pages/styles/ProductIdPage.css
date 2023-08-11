@@ -1,0 +1,14 @@
+.product__info__container {
+  display: grid;
+  grid-template-columns: 300px 400px;
+  grid-template-rows: 1fr auto;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.product__info__similar {
+  grid-column: 1 /span 2;
+  justify-self: center;
+}
